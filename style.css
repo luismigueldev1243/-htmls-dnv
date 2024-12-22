@@ -1,0 +1,96 @@
+.game {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    border-left: solid white;
+    border-right: solid white;
+    position: relative;
+
+  }
+  
+  .dino {
+    width: 30px;
+    height: 40px;
+    bottom: 0 ;
+    position: absolute;
+  }
+  .image{
+    height: 44px;
+  }
+  .obstacle {
+    width: 20px;
+    height: 80px;
+    position: absolute;
+    right: 1px;
+    bottom: -40px;
+    animation: moveObstacle 5s infinite ;
+  }
+  .image2{
+    height:40px ;
+    width: 50px ;
+    bottom: -20px;
+  }
+  .jump{
+    animation:jump 700ms ease-out;
+  }
+  @keyframes jump{
+    0%{
+        bottom: 0px;
+        background-image: url(Mjump.png);
+    }
+    40%{
+        bottom: 50px;
+        background-image: url(Mjump.png);
+
+    }
+    50% {
+      bottom: 70px;
+      background-image: url(Mjump.png);
+
+    }   
+    60%{
+        bottom: 90px;
+        background-image: url(Mjump.png);
+
+    }
+    70%{
+        bottom:90px;
+        background-image: url(Mjump.png);
+
+    }
+    100%{
+        bottom: 0px;
+        background-image: url(Mjump.png);
+
+    }
+  }
+
+  @keyframes moveObstacle {
+    from { 
+        right: -90px; 
+    }
+    to { 
+        right: 120%; 
+        }
+  }
+  .image3{
+    height: 30px;
+    width: 40px;
+  }
+  .Pt{
+    position: absolute;
+    bottom: 30px;
+    right:0px;
+    animation: animP 5s infinite linear;
+  }
+  @keyframes animP{
+    from { 
+      right: 0px; 
+  }
+  to { 
+      right: 120%; 
+      }
+  }
+  .downy{
+    height: 10px;
+  }
